@@ -41,7 +41,7 @@
     ; Multiplication operation
     [(list '* expr1 expr2)
      (~a "("(parse expr1) " * " (parse expr2) ")")]
-    [_ (error 'Comiler "No expression matched the pattern found. Given: ~v" s)]
+    [_ 8]
     ))
 
 
@@ -60,6 +60,5 @@
 (compile '((/ val => (+ val 3)) 5))
 
 (compile '((/ val => (+ val 3)) 5))
-
 
 
