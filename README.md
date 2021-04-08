@@ -21,4 +21,4 @@ only include semicolons in two places: after the return statement of a lambda ex
 and at the end of the main.
 
 We also did not end up implementing type checking. For example, if an int and a non-int
-were added together within the LC, the C++ code would be generated but will fail to compile.
+are added together within the LC, C++ code will be generated but will fail to compile.
