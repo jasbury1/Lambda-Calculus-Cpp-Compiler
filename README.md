@@ -22,3 +22,25 @@ and at the end of the main.
 
 We also did not end up implementing type checking. For example, if an int and a non-int
 are added together within the LC, C++ code will be generated but will fail to compile.
+
+Example LC input: 
+```
+((((/ x => (/ y => (/ z => (* x (+ y z))))) 4 ) 3) 2)
+```
+
+Example C++ output:
+```
+#include <iostream>
+
+int main(int argc, char* argv[]){
+    [=](int x) -> decltype(auto) {
+        return ([=](int y) -> decltype(auto) {
+            return ([=](int z) -> decltype(auto) {
+                return ((x * (y + z)));
+            });
+        });
+    }(4)(3)(2);
+}
+```
+
+
