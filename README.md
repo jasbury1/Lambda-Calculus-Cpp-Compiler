@@ -43,4 +43,7 @@ int main(int argc, char* argv[]){
 }
 ```
 
+Expected Result:
+    20
+
 
