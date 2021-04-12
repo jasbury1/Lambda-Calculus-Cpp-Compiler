@@ -8,7 +8,7 @@ and then the expression is parsed. In the end, the full C++ program is displayed
 stdout, which can then be compiled and run as a C++ file.
 
 ## Grammar:
-
+```
   LC	 	=	 	num
  	 	    |	 	id
  	    	|	 	(/ id => LC)
@@ -17,6 +17,7 @@ stdout, which can then be compiled and run as a C++ file.
  	    	|	 	(* LC LC)
  	     	|	 	(ifleq0 LC LC LC)
  	    	|	 	(println LC)
+```
             
 ## Examples:
 
