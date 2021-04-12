@@ -9,7 +9,7 @@ stdout, which can then be compiled and run as a C++ file.
 
 ## Grammar:
 ```
-LC	 	=	 	num
+LC	=	 	num
       |	 	id
       |	 	(/ id => LC)
       |	 	(+ LC LC)
