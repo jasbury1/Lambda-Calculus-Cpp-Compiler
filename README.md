@@ -9,14 +9,13 @@ stdout, which can then be compiled and run as a C++ file.
 
 ## Grammar:
 ```
-  LC	 	=	 	num
- 	 	    |	 	id
- 	    	|	 	(/ id => LC)
- 	    	|	 	(LC LC)
- 	     	|	 	(+ LC LC)
- 	    	|	 	(* LC LC)
- 	     	|	 	(ifleq0 LC LC LC)
- 	    	|	 	(println LC)
+LC	 	=	 	num
+      |	 	id
+      |	 	(/ id => LC)
+      |	 	(+ LC LC)
+      |	 	(* LC LC)
+      |	 	(ifleq0 LC LC LC)
+      |	 	(println LC)
 ```
             
 ## Examples:
